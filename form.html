@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="payform.css">
+</head>
+<body>
+    <div class="container">
+    <form >
+        <h1 class="main_heading">Payment form</h1>
+        <hr>
+        <h2>Contact info</h2>
+        <p>Required field are shown by *</p>
+        <p>Name:*<input type="text" name="name" required placeholder="naman" ><!--required makes necessary placeholder display pre definrd-->
+            <br>
+            <fieldset>
+            <legend>Gender</legend>
+            Male <input type="radio" name="gender" id="male">
+            Female <input type="radio" name="gender" id="Female"><!--keep name same //here gender-->
+        </fieldset>
+        </p>
+        <p>
+            Address:* <textarea name="adresss" id="adress" cols="100" rows="4" required></textarea>
+        </p>
+        <p>
+            Email:*<input type="email" name="email" id="email id" required>
+            <p>
+                Pincode:<input type="number" name="number" id="pincode">
+            </p>
+        </p>
+        <hr>
+        <h2>Payment info</h2>
+        <p>Card type:
+            <select name="card_type" id="card_type">
+                <option value="">--select a card type--</option>
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="chacha vidhayak">free</option>
+            </select>
+        </p>
+        <p>
+            card number:*
+            <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            card expire date:*
+            <input type="date" name="exp_date" id="date" required>
+        </p>
+        <p>
+            cvv:*<input type="password" name="cvv" id="cvv" required>
+        </p>
+        <input type="submit" value="Submit my form">
+<!--view page source when syntax mistake-->
+<!--inspect then select-->
+    </form>
+</div>
+</body>
+</html>
